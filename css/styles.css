@@ -10,12 +10,13 @@
   --team-background: #F5F4FA;
   --header-border-color:  #ececec;
   --portfolio-border-color: #EEEEEE;
+  --clients-list-border-color:  #AFB1B8;
 }
 
 body {
   font-family: var(--main-font);
   color: var(--color);
-  
+
 }
 
 h1,
@@ -260,6 +261,20 @@ img {
 
 }
 
+.quality-item-icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 270px;
+  height: 120px;
+  background: var(--team-background);
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+}
+
+
 .quality-title {
   font-weight: 700;
   font-size: 14px;
@@ -350,6 +365,50 @@ img {
 }
 
 /*============ END-TEAM ===========*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.title-clients {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color); 
+
+}
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+   margin-left: -30px;
+   margin-top: 50px;
+
+}
+
+.clients-list-item {
+  margin-left: 30px;
+}
+
+.clients-list-wrapper {
+  width: 170px;
+  height: 90px; 
+  border: 1px solid var(--clients-list-border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+
+}
+/*========== CLIENTS ========*/
+
+
+
+
+/*========== END-CLIENTS ========*/
 
 /*============ FOOTER ===========*/
 
