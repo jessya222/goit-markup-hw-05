@@ -425,6 +425,7 @@ color: var(--color);
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-list {
   margin-top: 20px ;
 }
