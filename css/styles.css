@@ -137,6 +137,7 @@ img {
 .contact-list{
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .mail{
@@ -173,6 +174,8 @@ img {
   color: var(--description-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -181,6 +184,15 @@ img {
   color: var(--accent-color);
 }
 
+.contact-link:hover svg,
+.contact-link:focus svg{
+  fill: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  color: var(--description-color);
+}
 
 
 /*============ END-HEADER ===========*/
@@ -196,10 +208,15 @@ img {
 }
 
 .hero {
-  background: var(--hero-background-color);
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .modal-btn {
@@ -375,9 +392,9 @@ img {
 }
 
 
-.social-media-list-item {
+.social-media-list-item {}
 
-}
+
 
 .social-media-link {
 display: flex;
@@ -387,12 +404,15 @@ background-color: var(--background);
 width: 44px;
 height: 44px;
 border-radius: 50%;
+fill: var(--clients-list-border-color); 
 }
 
 .social-media-link:hover,
 .social-media-link:focus {
 background-color: var(--accent-color);
+fill: var(--background);
 }
+
 
 
 /*============ END-TEAM ===========*/
@@ -418,11 +438,13 @@ color: var(--color);
   justify-content: center;
    margin-left: -30px;
    margin-top: 50px;
+   
 
 }
 
 .clients-list-item {
   margin-left: 30px;
+  
 }
 
 .clients-list-wrapper {
@@ -434,20 +456,19 @@ color: var(--color);
   border: 1px solid var(--clients-list-border-color);
   box-sizing: border-box;
   border-radius: 4px;
-
+  fill: var(--clients-list-border-color);
 }
 
 
 .clients-list-wrapper:hover,
 .clients-list-wrapper:focus {
  border: 1px solid var(--accent-color);
+ fill: var(--accent-color);
+ cursor: pointer;
+ 
 }
 
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-color);
-}
 /*========== CLIENTS ========*/
 
 
@@ -491,6 +512,54 @@ color: var(--color);
   display: flex;
   flex-direction: column;
 }
+
+.footer .container {
+  display: flex;
+}
+
+.footer-social-links {
+  display: block;
+  box-sizing: border-box;
+  width: 206px;
+  margin-left: 70px;
+
+}
+
+.footer-social-links-title {
+ display: inline-block;
+ align-items: center;
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+ color: var(--background);
+ margin-bottom: 20px;
+
+}
+
+.footer-social-media-list {
+ display: flex;
+ justify-content: space-between; 
+
+}
+
+.footer-social-media-link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+}
+
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
+ background-color: var(--accent-color);
+ fill: var(--background);
+}
+
 /*============ END FOOTER ===========*/
 
 /*============ PORTFOLIO ===========*/
@@ -519,6 +588,7 @@ color: var(--color);
 .portfolio-btn:focus {
   color: var(--background);
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buttons-list {
@@ -564,6 +634,9 @@ color: var(--color);
   margin-top: 30px;
 }
 
+.portfolio-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); ;
+}
 
 .portfolio-card-description {
   background: var(--background);
