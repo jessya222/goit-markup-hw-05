@@ -198,6 +198,8 @@ img {
 .hero {
   background: var(--hero-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .modal-btn {
@@ -205,13 +207,11 @@ img {
   font-size: 16px;
   font-family: inherit;
   line-height: 1.9;
-  letter-spacing: 0.06em;gn
-  text-align: center;
+  letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--background);
   background: var(--accent-color);
   border: 0px;
-  margin-bottom: 200px;
   min-width: 200px;
   padding: 10px 32px;
 }
@@ -246,7 +246,7 @@ img {
 
 
 .gallery-img {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -262,10 +262,9 @@ img {
 }
 
 .quality-item-icon {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   width: 270px;
   height: 120px;
   background: var(--team-background);
@@ -286,11 +285,10 @@ img {
 }
 
 .quality-item {
-  flex-basis: calc(100% / 4 -30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
-
 
 .description {
   font-size: 14px;
@@ -334,10 +332,11 @@ img {
   margin-top: -50px;
 }
 
+
 .team-item {
-  flex-basis: calc(100% / 4-30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -356,13 +355,45 @@ img {
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
-
 .team-person-wrapper {
   padding-top: 30px;
+  padding-right: 15px;
   padding-bottom: 30px;
+  padding-left: 15px;
   background-color: var(--background);
   border-radius: 0px 0px 4px 4px;
 }
+
+.social-media-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  
+}
+
+
+.social-media-list-item {
+
+}
+
+.social-media-link {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--background);
+width: 44px;
+height: 44px;
+border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+background-color: var(--accent-color);
+}
+
 
 /*============ END-TEAM ===========*/
 
@@ -395,13 +426,27 @@ color: var(--color);
 }
 
 .clients-list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px; 
   border: 1px solid var(--clients-list-border-color);
   box-sizing: border-box;
   border-radius: 4px;
 
+}
 
+
+.clients-list-wrapper:hover,
+.clients-list-wrapper:focus {
+ border: 1px solid var(--accent-color);
+}
+
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
 }
 /*========== CLIENTS ========*/
 
@@ -426,8 +471,8 @@ color: var(--color);
   margin-bottom: 9px;
 }
 
-.footer-list {
-  margin-top: 20px ;
+.footer .address {
+  margin-top: 20px;
 }
 
 .address-link {
@@ -446,7 +491,6 @@ color: var(--color);
   display: flex;
   flex-direction: column;
 }
-
 /*============ END FOOTER ===========*/
 
 /*============ PORTFOLIO ===========*/
@@ -462,8 +506,14 @@ color: var(--color);
   border: 0px;
   background: var(--team-background);
   padding: 6px 22px;
-  margin-left: 8px;
+ 
 }
+
+.portfolio-button-item {
+ margin-left: 8px;
+
+}
+
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -475,14 +525,13 @@ color: var(--color);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   margin-left: -8px;
-  padding-top: 94px;
-
 }
 
 .buttons {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 
@@ -492,7 +541,7 @@ color: var(--color);
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color);
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-img-description {
@@ -500,33 +549,28 @@ color: var(--color);
   line-height: 1.89;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -50px;
-
+  margin-top: -30px;
 }
 
 .portfolio-item {
- flex-basis: calc(100% / 3 -30px);
+ flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 
 .portfolio-card-description {
   background: var(--background);
-  border: 1px solid var(--portfolio-border-color) ;
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
   box-sizing: border-box;
-
-
-
-
+  padding: 20px 24px;
 }
 /*============ END PORTFOLIO ===========*/
