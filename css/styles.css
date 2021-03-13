@@ -516,6 +516,7 @@ color: var(--color);
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts-wrapper {
