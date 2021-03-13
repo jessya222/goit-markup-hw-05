@@ -392,7 +392,7 @@ img {
 }
 
 
-.social-media-list-item {}
+
 
 
 
@@ -517,6 +517,21 @@ color: var(--color);
   display: flex;
 }
 
+.footer-contacts-wrapper {
+  box-sizing: border-box;
+}
+
+.footer-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+  display: flex;
+  align-items: center;
+}
+
+
 .footer-social-links {
   display: block;
   box-sizing: border-box;
@@ -559,6 +574,7 @@ color: var(--color);
  background-color: var(--accent-color);
  fill: var(--background);
 }
+
 
 /*============ END FOOTER ===========*/
 
