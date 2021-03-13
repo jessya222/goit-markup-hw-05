@@ -533,6 +533,12 @@ color: var(--color);
 }
 
 
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
+}
+
+
 .footer-social-links {
   display: block;
   box-sizing: border-box;
