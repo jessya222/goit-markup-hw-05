@@ -192,7 +192,7 @@ img {
 
 .contact-icon {
   margin-right: 10px;
-  color: var(--description-color);
+  fill: var(--description-color);
 }
 
 
@@ -375,9 +375,9 @@ img {
 }
 .team-person-wrapper {
   padding-top: 30px;
-  padding-right: 15px;
+  padding-right: 44px;
   padding-bottom: 30px;
-  padding-left: 15px;
+  padding-left: 44px;
   background-color: var(--background);
   border-radius: 0px 0px 4px 4px;
 }
@@ -386,8 +386,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
   margin-top: 16px;
   
 }
@@ -448,7 +446,7 @@ color: var(--color);
   
 }
 
-.clients-list-wrapper {
+.clients-list-wrapper-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,8 +459,8 @@ color: var(--color);
 }
 
 
-.clients-list-wrapper:hover,
-.clients-list-wrapper:focus {
+.clients-list-wrapper-link:hover,
+.clients-list-wrapper-link:focus {
  border: 1px solid var(--accent-color);
  fill: var(--accent-color);
  cursor: pointer;
