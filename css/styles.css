@@ -152,6 +152,7 @@ img {
   padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover,
@@ -177,6 +178,7 @@ img {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -403,7 +405,8 @@ background-color: var(--background);
 width: 44px;
 height: 44px;
 border-radius: 50%;
-fill: var(--clients-list-border-color); 
+fill: var(--clients-list-border-color);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .social-media-link:hover,
@@ -415,6 +418,8 @@ fill: var(--background);
 
 
 /*============ END-TEAM ===========*/
+
+/*========== CLIENTS ========*/
 
 .clients {
   padding-top: 94px;
@@ -456,6 +461,7 @@ color: var(--color);
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--clients-list-border-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -468,7 +474,7 @@ color: var(--color);
 }
 
 
-/*========== CLIENTS ========*/
+
 
 
 
@@ -500,6 +506,7 @@ color: var(--color);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--background);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -529,6 +536,7 @@ color: var(--color);
   color: var(--description-color);
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -572,6 +580,7 @@ color: var(--color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -597,6 +606,7 @@ color: var(--color);
   border: 0px;
   background: var(--team-background);
   padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 
@@ -654,6 +664,8 @@ color: var(--color);
  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .portfolio-item:hover {
@@ -665,7 +677,79 @@ color: var(--color);
   border-right: 1px solid var(--portfolio-border-color);
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
+  border-top: none;
   box-sizing: border-box;
   padding: 20px 24px;
 }
+
+.portfolio-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background-color: rgba(33, 150, 243, 0.9);
+color: var(--background);
+padding: 63px 24px;
+overflow: auto;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+opacity: 0;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+  transform: translateY(0%);
+  opacity: 1;
+}
 /*============ END PORTFOLIO ===========*/
+
+
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.2);
+
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: var(--background);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--background);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+
+}
