@@ -208,6 +208,7 @@ img {
 .contact-icon {
   margin-right: 10px;
   fill: var(--description-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -257,8 +258,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background);
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
 }
 
@@ -611,7 +611,7 @@ color: var(--color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
